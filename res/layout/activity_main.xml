@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditAlbumActivity"
+    android:background="#000000">
+
+	<FrameLayout android:id="@+id/canvasLayout"
+	    android:background="#ffffffff"
+	    android:layout_width="300dp"
+	    android:layout_height="300dp" />
+
+	<Button
+	    android:id="@+id/createImageBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/canvasLayout"
+	    android:layout_below="@+id/canvasLayout"
+	    android:layout_marginTop="15dp"
+	    android:text="画像作成" />
+
+	<Button
+	    android:id="@+id/itemABtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/createImageBtn"
+	    android:layout_alignBottom="@+id/createImageBtn"
+	    android:layout_toRightOf="@+id/createImageBtn"
+	    android:text="ItemA" />
+
+	<Button
+	    android:id="@+id/itemBBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/itemABtn"
+	    android:layout_alignBottom="@+id/itemABtn"
+	    android:layout_toRightOf="@+id/itemABtn"
+	    android:text="ItemB" />
+
+	<Button
+	    android:id="@+id/itemCBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/itemBBtn"
+	    android:layout_alignBottom="@+id/itemBBtn"
+	    android:layout_toRightOf="@+id/itemBBtn"
+	    android:text="itemC" />
+
+	<Button
+	    android:id="@+id/char2Btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/createImageBtn"
+	    android:layout_below="@+id/createImageBtn"
+	    android:text="縦文字" />
+
+	<Button
+	    android:id="@+id/charBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/char2Btn"
+	    android:layout_alignBottom="@+id/char2Btn"
+	    android:layout_alignRight="@+id/itemABtn"
+	    android:text="横文字" />
+
+	<Button
+	    android:id="@+id/reverseBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/charBtn"
+	    android:layout_alignBottom="@+id/charBtn"
+	    android:layout_toLeftOf="@+id/itemCBtn"
+	    android:text="反転" />
+
+	<Button
+	    android:id="@+id/upLayerBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/downLayerBtn"
+	    android:layout_alignBottom="@+id/downLayerBtn"
+	    android:layout_alignLeft="@+id/char2Btn"
+	    android:text="１レイヤ上へ" />
+
+	<Button
+	    android:id="@+id/downLayerBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/charBtn"
+	    android:layout_toRightOf="@+id/upLayerBtn"
+	    android:text="１レイヤ下へ" />
+
+	<Button
+	    android:id="@+id/discardBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/downLayerBtn"
+	    android:layout_toRightOf="@+id/downLayerBtn"
+	    android:text="捨てる" />
+
+</RelativeLayout>
